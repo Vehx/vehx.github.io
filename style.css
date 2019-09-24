@@ -1,0 +1,84 @@
+body {
+    background-color: rgb(5, 5, 5);
+    scroll-behavior: smooth;
+    color: whitesmoke;
+    animation: initialFadeIn 5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    border: 1px solid whitesmoke;
+}
+
+img:hover {
+    animation: quickFadeOut 2s;
+    animation: initialFadeIn 2s;
+}
+
+a:link {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:visited {
+    color: whitesmoke;
+}
+
+a:hover {
+    color: darkred;
+}
+
+ul {
+    list-style: none;
+}
+
+@keyframes initialFadeIn {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 0.15;
+    }
+    30% {
+        opacity: 0.30;
+    }
+    45% {
+        opacity: 0.45;
+    }
+    60% {
+        opacity: 0.60;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    90% {
+        opacity: 0.90;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
+
+@keyframes quickFadeOut {
+    100% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    25% {
+        opacity: 0.75;
+    }
+    0% {
+        opacity: 1;
+    }
+}
