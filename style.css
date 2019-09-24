@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: rgb(5, 5, 5);
     scroll-behavior: smooth;
@@ -9,6 +13,10 @@ body {
     align-items: center;
 }
 
+div {
+    padding: 5%;
+}
+
 img {
     height: 100px;
     width: 100px;
@@ -18,6 +26,33 @@ img {
 img:hover {
     animation: quickFadeOut 2s;
     animation: initialFadeIn 2s;
+}
+
+#navBox {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+#navBox img {
+    align-self: flex-start;
+}
+
+#navBox ul {
+    display: flex;
+}
+
+#navBox ul li {
+    padding: 10%;
+    font-size: 20px;
+}
+
+#projectsBox {
+    font-size: 18px;
+}
+
+#contactBox {
+    font-size: 20px;
 }
 
 a:link {
