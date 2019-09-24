@@ -3,43 +3,54 @@
 }
 
 body {
+    height: 100vh;
+    width: 100%;
     background-color: rgb(5, 5, 5);
     scroll-behavior: smooth;
     color: whitesmoke;
     animation: initialFadeIn 5s;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
     align-items: center;
 }
 
 img {
     height: 100px;
     width: 100px;
-    border: 1px solid whitesmoke;
 }
 
 img:hover {
-    animation: quickFadeOut 2s;
-    animation: initialFadeIn 2s;
+    border-color: darkred;
 }
 
-#navBox {
+#homeBox {
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+}
+
+nav {
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
+    width: 100%;
 }
 
-#navBox img {
+#homeBox img {
     align-self: flex-start;
 }
 
-#navBox ul {
+#homeBox ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    list-style: none;
 }
 
-#navBox ul li {
-    padding: 10%;
+#homeBox ul li {
+    padding: 5px;
     font-size: 20px;
 }
 
@@ -62,10 +73,6 @@ a:visited {
 
 a:hover {
     color: darkred;
-}
-
-ul {
-    list-style: none;
 }
 
 .heart {
